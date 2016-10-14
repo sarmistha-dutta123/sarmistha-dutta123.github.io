@@ -60,22 +60,22 @@ var graph = new Rickshaw.Graph( {
 			color: 'rgba(255, 0, 0, 0.4)',
 			renderer: 'stack'
 		}, {
-			name: 'heat index',
+			name: 'rain',
 			data: seriesData.shift(),
 			color: 'rgba(255, 127, 0, 0.4)',
 			renderer: 'stack'
 		}, {
-			name: 'dewpoint',
+			name: 'friends nearby',
 			data: seriesData.shift(),
 			color: 'rgba(127, 0, 0, 0.3)',
 			renderer: 'scatterplot'
 		}, {
-			name: 'pop',
+			name: 'smoking',
 			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y /4 } }),
 			color: 'rgba(0, 0, 127, 0.4)',
 			renderer: 'bar'
 		}, {
-			name: 'humidity',
+			name: 'proximity to a bar',
 			data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
 			renderer: 'line',
 			color: 'rgba(0, 0, 127, 0.25)'
